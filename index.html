@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinear lineas.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <div class="contenido">
+        <div class="card">
+            <h2 class="titulo">COLOCAR LINEAS DENTRO DEL CONTENEDOR FLEXIBLE EN DIRECCION DEL EJE TRANSVERSAL</h2>
+            <p>La propiedad align-content alinea líneas dentro de un contenedor flexible. . Existen seis valores posibles para esta propiedad.</p>
+            <div class="sintaxis">
+                <div class="html">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="css">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    <strong class="titulo">align-content: flex-start | flex-end | space-between | center | space-around | stretch;</strong> 
+}
+                    </pre>
+                </div>
+            </div>                
+        </div>
+
+
+        <div class="card">
+            <h3>flex-start</h3>
+            <p>Las lineas se colocan a partir del lado inicial del eje transversal.</p>
+
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    &lt;div&gt;E3&lt;/div&gt;
+    &lt;div&gt;E4&lt;/div&gt;
+    &lt;div&gt;E5&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    <strong class="titulo">align-content: flex-start;</strong>
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/flex-start.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+            
+
+            <h3>Ejemplo</h3>
+
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-1"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 5&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 6&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 7&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 8&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 9&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 10&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 11&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+                    </pre>
+                </div>
+            </div>
+
+
+            <div class="contenedor-flexible-1">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>
+                <div class="elemento-flexible">Item 7</div>
+                <div class="elemento-flexible">Item 8</div>
+                <div class="elemento-flexible">Item 9</div>
+                <div class="elemento-flexible">Item 10</div>
+                <div class="elemento-flexible">Item 11</div>
+                
+            </div>
+        </div>
+        <div class="card">
+            <h3>flex-end</h3>
+            <p>Las lineas se desplazan al lado final del eje transversal.</p>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    &lt;div&gt;E3&lt;/div&gt;
+    &lt;div&gt;E4&lt;/div&gt;
+    &lt;div&gt;E5&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    <strong class="titulo">align-content: flex-end;</strong>
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/flex-end.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+            <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-2"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 5&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 6&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 7&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 8&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 9&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 10&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 11&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+                    </pre>
+                </div>
+            </div>
+
+            <div class="contenedor-flexible-2">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>
+                <div class="elemento-flexible">Item 7</div>
+                <div class="elemento-flexible">Item 8</div>
+                <div class="elemento-flexible">Item 9</div>
+                <div class="elemento-flexible">Item 10</div>
+                <div class="elemento-flexible">Item 11</div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>space-between</h3>
+            <p>La distancia entre cualquier par de líneas adyacentes es la misma. La primera línea se encuentra pegada al lado inicial del eje transversal y la última línea se encuentra pegada al lado final del eje transversal.</p>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    ...
+    &lt;div&gt;E7&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    <strong class="titulo">align-content: space-between;</strong>
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/space-between.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+            <h3>Elemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-3"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 5&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 6&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 7&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 8&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 9&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 10&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 11&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+                    </pre>
+                </div>
+            </div>
+            <div class="contenedor-flexible-3">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>
+                <div class="elemento-flexible">Item 7</div>
+                <div class="elemento-flexible">Item 8</div>
+                <div class="elemento-flexible">Item 9</div>
+                <div class="elemento-flexible">Item 10</div>
+                <div class="elemento-flexible">Item 11</div>
+                
+            </div>
+        </div>
+        <div class="card">
+            <h3>center</h3>
+            <p>Las líneas se colocan al centro del contenedor flexible con respecto al eje transversal. La distancia entre el lado inicial del eje transversal y la primera línea es la misma distancia que hay entre el lado final del eje transversal y la ultima línea. </p>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    ...
+    &lt;div&gt;E7&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    <strong class="titulo">align-content: center;</strong>
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/center.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+            <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-4"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 5&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 6&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 7&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 8&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 9&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 10&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 11&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+                    </pre>
+                </div>
+            </div>
+            <div class="contenedor-flexible-4">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>
+                <div class="elemento-flexible">Item 7</div>
+                <div class="elemento-flexible">Item 8</div>
+                <div class="elemento-flexible">Item 9</div>
+                <div class="elemento-flexible">Item 10</div>
+                <div class="elemento-flexible">Item 11</div>
+                
+            </div>
+        </div>
+        <div class="card">
+            <h3>space-around</h3>
+            <p>La distancia entre cualquier par de líneas adyacentes siempre es la misma. La distancia entre el lado inicial del eje transversal y la primera línea es la misma distancia que existe entre el lado final del eje transversal y la última línea, además esta distancia es la mitad de la distancia entre líneas adyacentes.</p>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    ...
+    &lt;div&gt;E7&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    <strong class="titulo">align-content: space-around;</strong>
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/space-around.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+            <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-5"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 5&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 6&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 7&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 8&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 9&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 10&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 11&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+                    </pre>
+                </div>
+            </div>
+            <div class="contenedor-flexible-5">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>
+                <div class="elemento-flexible">Item 7</div>
+                <div class="elemento-flexible">Item 8</div>
+                <div class="elemento-flexible">Item 9</div>
+                <div class="elemento-flexible">Item 10</div>
+                <div class="elemento-flexible">Item 11</div>            
+            </div>
+        </div>
+        <div class="card">
+            <h3>stretch [Valor por defecto]</h3>
+            <p>Las líneas se estiran para ocupar el espacio restante. El espacio libre en el contenedor se divide por igual entre todas las líneas.</p>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <div class="codigo-html">
+                        <h4 class="titulo">HTML</h4>
+                        <pre>
+&lt;div class="contenedor"&gt;
+    &lt;div&gt;E1&lt;/div&gt;
+    &lt;div&gt;E2&lt;/div&gt;
+    ...
+    &lt;div&gt;E6&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>                        
+                    </div>
+                    <div class="codigo-css">
+                        <h4 class="titulo">CSS</h4>
+                        <pre>
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    <strong class="titulo">align-content: stretch;</strong> [VALOR POR DEFECTO]
+}
+                        </pre>    
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/stretch.png" alt="IMG" class="img-center">
+                </div>
+            </div>
+            <h3>Ejemplo</h3>
+            <div class="concepto-dos-columnas">
+                <div class="codigo">
+                    <h4 class="titulo">HTML</h4>
+                    <pre>
+&lt;div class="contenedor-flexible-6"&gt;
+    &lt;div class="elemento-flexible"&gt;Item 1&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 2&lt;/div&gt;
+    &lt;div class="elemento-flexible"&gt;Item 3&lt;/div&gt;        
+    &lt;div class="elemento-flexible"&gt;Item 4&lt;/div&gt;        
+    ...
+    &lt;div class="elemento-flexible"&gt;Item 15&lt;/div&gt;        
+&lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="imagen">
+                    <h4 class="titulo">CSS</h4>
+                    <pre>
+.contenedor-flexible-6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+                    </pre>
+                </div>
+            </div>
+            <div class="contenedor-flexible-6">
+                <div class="elemento-flexible">Item 1</div>
+                <div class="elemento-flexible">Item 2</div>
+                <div class="elemento-flexible">Item 3</div>
+                <div class="elemento-flexible">Item 4</div>
+                <div class="elemento-flexible">Item 5</div>
+                <div class="elemento-flexible">Item 6</div>
+                <div class="elemento-flexible">Item 7</div>
+                <div class="elemento-flexible">Item 8</div>
+                <div class="elemento-flexible">Item 9</div>
+                <div class="elemento-flexible">Item 10</div>
+                <div class="elemento-flexible">Item 11</div>
+                <div class="elemento-flexible">Item 12</div>
+                <div class="elemento-flexible">Item 13</div>
+                <div class="elemento-flexible">Item 14</div>
+                <div class="elemento-flexible">Item 15</div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
